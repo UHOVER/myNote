@@ -1,2 +1,3 @@
-# myNote
-myNote
+# My Study Note
+
+* javaScript
