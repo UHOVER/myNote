@@ -56,6 +56,8 @@ console.log(arr5.join('**'));   // 将数组的每个元素用指定的符号连
 
 var arr7 = ['test1', [1,2,3,['hello', 'world']]];   //多维数组
 console.log(arr7);
+// console.log(JSON.stringify(arr7));
+
 
 
 
