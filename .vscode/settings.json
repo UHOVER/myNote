@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+    "python.linting.enabled": false,
+    "python.formatting.provider": "yapf",
+    "python.linting.flake8Enabled": true
+}
