@@ -81,12 +81,22 @@ end
 -- for i,v in ipairs(coins) do
 -- 	print(i,v)
 -- end
-function a(  )
-	return 1
-end
 
-function b(  )
-	return 33
-end
-local a, b = a(), b()
-print(a,b)
+
+local enum = {}
+local temp = {}
+
+local mt = {
+	__newindex = function(_, name, value)
+		if not temp[name] then
+			temp[name] = value
+		else
+			error("尝试给 enum."..name.." 赋值")
+		end
+	end,
+	__index = temp
+}
+setmetatable(enum, mt)
+
+enum.a = 'a'
+-- enum.a = 'aaa'
